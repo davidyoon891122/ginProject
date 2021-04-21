@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ .title }}</title>
+        <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="frame">
+            <form class="join_frame" method="POST">
+                <span class="join_span">
+                    Memeber Join
+                </span>
+                <div class="id">
+                    <label class="join_label">ID : </label>
+                    <input type="text" class="join_input" placeholder="ID" name="idJoin">
+                </div>
+                <div class="pwd">
+                    <label class="join_label">PASSWORD : </label>
+                    <input type="password" class="join_input" placeholder="PASSWORD" name="passwordJoin">
+                </div>
+                <div class="name">
+                    <label class="join_label">NAME : </label>
+                    <input type="text" class="join_input" placeholder="NAME" name="nameJoin">
+                </div>
+                <div class="number">
+                    <label class="join_label">NUMBER : </label>
+                    <input type="text" class="join_input" placeholder="NUMBER" name="numberJoin">
+                </div>
+                <div class="join_btn">
+                    <input type="submit" value="join">
+                    <input type="reset" value="reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -7,7 +7,7 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-type UserInfo struct {
+type LoginInfo struct {
 	ID       string `yaml:"id"`
 	PASSWORD string `yaml:"pwd"`
 }
@@ -26,13 +26,13 @@ func openFile() []byte {
 	return data
 }
 
-func ReadYaml() UserInfo {
+func ReadYaml() LoginInfo {
 	data := openFile()
-	var userInfo UserInfo
-	err := yaml.Unmarshal(data, &userInfo)
+	var loginInfo LoginInfo
+	err := yaml.Unmarshal(data, &loginInfo)
 	checkError(err)
-	log.Printf("userID : %s\n", userInfo.ID)
-	log.Printf("userPWD : %s\n", userInfo.PASSWORD)
+	log.Printf("loginID : %s\n", loginInfo.ID)
+	log.Printf("loginPWD : %s\n", loginInfo.PASSWORD)
 
-	return userInfo
+	return loginInfo
 }
